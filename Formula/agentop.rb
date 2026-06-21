@@ -5,21 +5,21 @@
 class Agentop < Formula
   desc "htop for AI coding agents — find and reap idle Claude/cmux/emdash sessions"
   homepage "https://github.com/thesatellite-ai/agentop"
-  version "0.1.3"
+  version "0.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thesatellite-ai/agentop/releases/download/v0.1.3/agentop_darwin_amd64.tar.gz"
-      sha256 "f4f0c3f30c09243c21c1b6f63f02625b3c9d309c402d3f79b8ad5e7965222103"
+      url "https://github.com/thesatellite-ai/agentop/releases/download/v0.1.0/agentop_darwin_amd64.tar.gz"
+      sha256 "c41654a3b7d9406071d630489727346f1414439236a87ffb6232540fed6805e3"
 
       define_method(:install) do
         bin.install "agentop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thesatellite-ai/agentop/releases/download/v0.1.3/agentop_darwin_arm64.tar.gz"
-      sha256 "5d62faf79dde5ba0c74df18c8dd78edec45ed88be3c16a4670d4ea00dba0f44a"
+      url "https://github.com/thesatellite-ai/agentop/releases/download/v0.1.0/agentop_darwin_arm64.tar.gz"
+      sha256 "2ec60e0faeff69be1ee744ac75c52286f32d9a014316185599b677bcff4ec4d9"
 
       define_method(:install) do
         bin.install "agentop"
@@ -29,15 +29,15 @@ class Agentop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thesatellite-ai/agentop/releases/download/v0.1.3/agentop_linux_amd64.tar.gz"
-      sha256 "72ef94270441d8f4bc096cd5c999adea0a4eee704bf144980aa81756c4d89c72"
+      url "https://github.com/thesatellite-ai/agentop/releases/download/v0.1.0/agentop_linux_amd64.tar.gz"
+      sha256 "2746615ef83bf211e5e9ebba17a1d53dded1f7c02d34e9be623604232f57ef51"
       define_method(:install) do
         bin.install "agentop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thesatellite-ai/agentop/releases/download/v0.1.3/agentop_linux_arm64.tar.gz"
-      sha256 "4643e88987033ac857cb7d11bedc75ed1c8d17c0c762f9c94c9a2b1335103bed"
+      url "https://github.com/thesatellite-ai/agentop/releases/download/v0.1.0/agentop_linux_arm64.tar.gz"
+      sha256 "dec268849d9fe3ee82731860da8476f3150cf95d7bf252db71ab4f31e003a073"
       define_method(:install) do
         bin.install "agentop"
       end
