@@ -5,21 +5,21 @@
 class Lore < Formula
   desc "Local-first knowledge & context store for AI coding agents"
   homepage "https://github.com/thesatellite-ai/lore"
-  version "0.1.14"
+  version "0.1.15"
   license "PolyForm-Perimeter-1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.14/lore_darwin_amd64.tar.gz"
-      sha256 "8f1ba64115271c2b3aa8d53d492201304c091b227ae82d6502f9b9be4717c01d"
+      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.15/lore_darwin_amd64.tar.gz"
+      sha256 "f2819b3b5b8f8a4f99b1defc0aa52a9e90e51fbdac55a02a4ad21efebdeff146"
 
       define_method(:install) do
         bin.install "lore"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.14/lore_darwin_arm64.tar.gz"
-      sha256 "57ea010515fd329c8a0b5b485412ca60c90492c70f6e4ca39f1f746705e0dfe6"
+      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.15/lore_darwin_arm64.tar.gz"
+      sha256 "b2af4085c53e47a83f33cd5afb937463f951a9da6273aeac22385be2819b95c8"
 
       define_method(:install) do
         bin.install "lore"
@@ -29,15 +29,15 @@ class Lore < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.14/lore_linux_amd64.tar.gz"
-      sha256 "078a3d3ca72387dc6db9bc9ab00a2f342abee53e54e7f8a4a8bb2a8388858dfe"
+      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.15/lore_linux_amd64.tar.gz"
+      sha256 "9aa10dddb6dbd5b0467ce6d6fda915b05c619910960eff324e3185d79dd05e2a"
       define_method(:install) do
         bin.install "lore"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.14/lore_linux_arm64.tar.gz"
-      sha256 "dcf13f15d65d396cff5c18fb8888639779a095b30d43033eb72ac551c7ca1b92"
+      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.15/lore_linux_arm64.tar.gz"
+      sha256 "e7eaad98d20dc709c71dfa4b9d2b37a6d7ed51b6aaf1fd5847eed07d70ed9d8e"
       define_method(:install) do
         bin.install "lore"
       end
