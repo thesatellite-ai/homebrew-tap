@@ -5,20 +5,20 @@
 class Lore < Formula
   desc "Local-first knowledge & context store for AI coding agents"
   homepage "https://github.com/thesatellite-ai/lore"
-  version "0.1.19"
+  version "0.1.20"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.19/lore_darwin_amd64.tar.gz"
-      sha256 "9980dcddeb11d0724f2fee515267ffe20849a4b8beb7a1a592908bba62a78db6"
+      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.20/lore_darwin_amd64.tar.gz"
+      sha256 "74f31fd1f29712e88d27525474e60157c26f1baf3b57a689c247b54de9855824"
 
       def install
         bin.install "lore"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.19/lore_darwin_arm64.tar.gz"
-      sha256 "81b258d56e08df6e88cbbb3915e0a169d45c8d6a7dbf9540112074d80a02d628"
+      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.20/lore_darwin_arm64.tar.gz"
+      sha256 "37b1e066f12be2d1874db8ee5d715be1634339078ae9faf8c579b26ad4b7da73"
 
       def install
         bin.install "lore"
@@ -28,15 +28,15 @@ class Lore < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.19/lore_linux_amd64.tar.gz"
-      sha256 "abe3c51101ecdba18b1ccd15986e485df7ccf73bc4be6c35a57b907c0f2efbdb"
+      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.20/lore_linux_amd64.tar.gz"
+      sha256 "367abb73f5b57ec6193963ffe2d5fd27d016c98aca2d466985f75ec9a3d85f10"
       def install
         bin.install "lore"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.19/lore_linux_arm64.tar.gz"
-      sha256 "94e9ad4ffad8c1db0deacaad6bb615baf149eb29c088748067134579b6dfccc7"
+      url "https://github.com/thesatellite-ai/lore/releases/download/v0.1.20/lore_linux_arm64.tar.gz"
+      sha256 "9e7403b46165ac75cb9234601b796683462269a78bb15da13db9b99e77855069"
       def install
         bin.install "lore"
       end
